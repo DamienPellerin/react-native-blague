@@ -7,9 +7,9 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/dad-jokes.png",
-      "resizeMode": "contain",
-      "backgroundColor": "black"
+      "image": "./assets/dad-jokes-splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#040404c0"
     },
     "assetBundlePatterns": [
       "**/*"

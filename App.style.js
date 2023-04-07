@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 const s = StyleSheet.create({
   container_joke_answer: {
     backgroundColor: "#040404e3",
-    paddingTop: 25,
+    paddingTop: 20,
   },
   next: {
     flexDirection: "row",
