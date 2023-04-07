@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "react-native-blague",
-    "slug": "react-native-blague",
+    "name": "DAD JOKES",
+    "slug": "dad-jokes-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
