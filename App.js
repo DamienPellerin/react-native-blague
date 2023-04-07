@@ -74,8 +74,10 @@ export default function App() {
 
   return (
     <SafeAreaProvider style={{ backgroundColor: "#040404ff" }}>
-      <SafeAreaView>
-        <Header />
+      <SafeAreaView style={s.app}>
+        <View style={s.header}>
+          <Header />
+        </View>
         <View style={s.next}>
           <ButtonCatRandom onPress={catRandom} />
           <ButtonCatBlondes onPress={catBlondes} />

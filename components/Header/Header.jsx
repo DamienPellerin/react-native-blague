@@ -5,7 +5,7 @@ import { s } from "./Header.style";
 
 export function Header() {
   return (
-    <View style={s.container_header}>
+    <View>
       <Image style={s.image} source={logo} />
     </View>
   );
