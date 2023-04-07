@@ -1,7 +1,6 @@
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import { View } from "react-native";
 import { s } from "./App.style";
-import { ButtonNext } from "./components/ButtonResponse/ButtonResponse";
 import { ButtonCatBlondes } from "./components/ButtonCat/ButtonCatBlondes";
 import { ButtonCatBeauf } from "./components/ButtonCat/ButtonCatBeauf";
 import { ButtonCatDev } from "./components/ButtonCat/ButtonCatDev";
@@ -10,7 +9,6 @@ import { Randomjoke } from "./components/Randomjoke/Randomjoke";
 import { ResponseJoke } from "./components/ResponseJoke/ResponseJoke";
 import { useState } from "react";
 import { useEffect } from "react";
-import { Text } from "react-native";
 import BlaguesAPI from "blagues-api";
 import { Header } from "./components/Header/Header";
 
