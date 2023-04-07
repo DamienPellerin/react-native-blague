@@ -28,6 +28,16 @@ const s = StyleSheet.create({
   text_joke: {
     paddingBottom: 20,
   },
+
+  btn_next: {
+    position: "absolute",
+    top: 20,
+    right: 15,
+    width: 28,
+    height: 28,
+    borderRadius: 20,
+    alignItems: "center",
+  },
 });
 
 export { s };

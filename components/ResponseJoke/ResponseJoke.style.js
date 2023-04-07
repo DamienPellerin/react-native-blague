@@ -25,6 +25,10 @@ const s = StyleSheet.create({
   answer: {
     fontSize: 20,
   },
+  btn_response: {
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+  },
 });
 
 export { s };

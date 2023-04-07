@@ -7,7 +7,7 @@ import {
 } from "../ButtonResponse/ButtonResponse";
 import { s } from "./ResponseJoke.style";
 
-export function ResponseJoke({ reponse }) {
+export function ResponseJoke({ reponse, nextJoke }) {
   const [visible, setVisible] = useState(false);
   function Reponse() {
     setVisible(!visible);
@@ -23,14 +23,16 @@ export function ResponseJoke({ reponse }) {
           <View style={s.container_answer}>
             <Text style={s.answer}>{reponse}</Text>
           </View>
-          <View>
+          <View style={s.btn_response}>
             <ButtonClose onPress={Reponse} />
+            <ButtonNext style={s.btn_next} onPress={nextJoke} />
           </View>
         </View>
       )}
       {!visible && (
-        <View>
+        <View style={s.btn_response}>
           <ButtonResponse onPress={Reponse} />
+          <ButtonNext style={s.btn_next} onPress={nextJoke} />
         </View>
       )}
     </View>

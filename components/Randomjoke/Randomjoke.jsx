@@ -1,10 +1,11 @@
 import axios from "axios";
 import BlaguesAPI from "blagues-api";
-import { Text, View } from "react-native";
+import { Text, View, Image, TouchableOpacity } from "react-native";
+import fleche from "../../assets/fleche-droite.png";
 import { useEffect, useState } from "react";
 import { s } from "./Randomjoke.style";
 
-export function Randomjoke({ blague, currentCategory, setBlague }) {
+export function Randomjoke({ blague, currentCategory, setBlague, nextJoke }) {
   return (
     <View>
       <View style={s.container_joke}>
