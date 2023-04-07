@@ -11,6 +11,15 @@ const s = StyleSheet.create({
     alignContent: "center",
     padding: 20,
     margin: 20,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 12,
+    },
+    shadowOpacity: 0.58,
+    shadowRadius: 16.0,
+
+    elevation: 24,
   },
 
   joke: {

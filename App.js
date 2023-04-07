@@ -41,7 +41,7 @@ export default function App() {
     <SafeAreaProvider>
       <SafeAreaView>
         <Header />
-        <View style={{ backgroundColor: "#0b0909e7" }}>
+        <View style={s.btn_next}>
           <ButtonNext onPress={nextJoke} />
         </View>
         <View style={s.container}>
