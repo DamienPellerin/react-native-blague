@@ -1,17 +1,16 @@
 import { StyleSheet } from "react-native";
 
 const s = StyleSheet.create({
-  container: {
-    height: "100%",
-    backgroundColor: "#040404e3",
-    justifyContent: "center",
-  },
   container_joke_answer: {
-    height: 800,
-    bottom: 150,
-  },
-  btn_next: {
     backgroundColor: "#040404e3",
+  },
+  next: {
+    flexDirection: "row",
+    backgroundColor: "#040404da",
+  },
+
+  btn_next: {
+    backgroundColor: "#040404c0",
     shadowColor: "#000",
     shadowOffset: {
       width: 0,

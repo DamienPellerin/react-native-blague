@@ -2,6 +2,9 @@ import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import { View } from "react-native";
 import { s } from "./App.style";
 import { ButtonNext } from "./components/ButtonResponse/ButtonResponse";
+import { ButtonCatBlondes } from "./components/ButtonCat/ButtonCatBlondes";
+import { ButtonCatBeauf } from "./components/ButtonCat/ButtonCatBeauf";
+import { ButtonCatDev } from "./components/ButtonCat/ButtonCatDev";
 import { Randomjoke } from "./components/Randomjoke/Randomjoke";
 import { ResponseJoke } from "./components/ResponseJoke/ResponseJoke";
 import { useState } from "react";
@@ -17,6 +20,11 @@ export default function App() {
 
   const [blague, setBlague] = useState("undefined");
   const [reponse, setReponse] = useState("undefined");
+  const [currentCategory, setCurrentCategory] = useState(
+    blagues.categories.BLONDES,
+    blagues.categories.BEAUF,
+    blagues.categories.DEV
+  );
 
   useEffect(() => {
     blagues
@@ -29,26 +37,54 @@ export default function App() {
   }, []);
 
   function nextJoke() {
-    blagues
-      .random({ disallow: [blagues.categories.DARK, blagues.categories.LIMIT] })
-      .then((data) => {
-        setBlague(data.joke);
-        setReponse(data.answer);
-      });
+    blagues.randomCategorized(currentCategory).then((data) => {
+      setBlague(data.joke);
+      setReponse(data.answer);
+    });
+  }
+
+  function catBlondes() {
+    setCurrentCategory(blagues.categories.BLONDES);
+    blagues.randomCategorized(blagues.categories.BLONDES).then((data) => {
+      setBlague(data.joke);
+      setReponse(data.answer);
+    });
+  }
+
+  function catBeauf() {
+    setCurrentCategory(blagues.categories.BEAUF);
+    blagues.randomCategorized(blagues.categories.BEAUF).then((data) => {
+      setBlague(data.joke);
+      setReponse(data.answer);
+    });
+  }
+
+  function catDev() {
+    setCurrentCategory(blagues.categories.DEV);
+    blagues.randomCategorized(blagues.categories.DEV).then((data) => {
+      setBlague(data.joke);
+      setReponse(data.answer);
+    });
   }
 
   return (
-    <SafeAreaProvider>
+    <SafeAreaProvider style={{ backgroundColor: "#040404ff" }}>
       <SafeAreaView>
         <Header />
-        <View style={s.btn_next}>
-          <ButtonNext onPress={nextJoke} />
+        <View style={s.next}>
+          <ButtonCatBlondes onPress={catBlondes} />
+          <ButtonCatBeauf onPress={catBeauf} />
+          <ButtonCatDev onPress={catDev} />
         </View>
-        <View style={s.container}>
-          <View style={s.container_joke_answer}>
-            <Randomjoke blague={blague} setBlague={setBlague} />
-            <ResponseJoke reponse={reponse} />
-          </View>
+        <View style={s.container_joke_answer}>
+          <ButtonNext style={s.btn_next} onPress={nextJoke} />
+
+          <Randomjoke
+            blague={blague}
+            setBlague={setBlague}
+            currentCategory={currentCategory}
+          />
+          <ResponseJoke reponse={reponse} />
         </View>
       </SafeAreaView>
     </SafeAreaProvider>

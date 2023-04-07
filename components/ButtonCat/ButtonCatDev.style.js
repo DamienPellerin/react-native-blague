@@ -1,14 +1,12 @@
 import { StyleSheet } from "react-native";
 
 const s = StyleSheet.create({
-  container_joke: {
-    color: "black",
-    height: 180,
-    textAlign: "center",
+  button: {
+    height: 30,
+    width: 100,
+    justifyContent: "center",
     backgroundColor: "#f5c150fc",
     borderRadius: 20,
-    justifyContent: "center",
-    padding: 20,
     margin: 20,
     shadowColor: "#000",
     shadowOffset: {
@@ -20,13 +18,10 @@ const s = StyleSheet.create({
 
     elevation: 24,
   },
-
-  joke: {
-    fontSize: 20,
-  },
-
-  text_joke: {
-    paddingBottom: 20,
+  text_button: {
+    color: "#0b0909fd",
+    fontWeight: "bold",
+    textAlign: "center",
   },
 });
 
