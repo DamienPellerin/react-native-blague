@@ -5,7 +5,7 @@ const s = StyleSheet.create({
     flex: 1,
   },
   header: {
-    flex: 1,
+    flex: 2,
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#0404047d",
