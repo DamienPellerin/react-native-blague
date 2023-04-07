@@ -3,13 +3,13 @@ import { StyleSheet } from "react-native";
 const s = StyleSheet.create({
   container_joke: {
     color: "black",
-    height: 180,
+    height: 150,
     textAlign: "center",
     backgroundColor: "#f5c150fc",
     borderRadius: 20,
     justifyContent: "center",
     padding: 20,
-    margin: 20,
+    marginBottom: 40,
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -37,6 +37,7 @@ const s = StyleSheet.create({
     height: 28,
     borderRadius: 20,
     alignItems: "center",
+    marginTop: 10,
   },
 });
 

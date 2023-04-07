@@ -10,7 +10,6 @@ const s = StyleSheet.create({
     justifyContent: "center",
     alignContent: "center",
     padding: 20,
-    margin: 20,
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -28,6 +27,7 @@ const s = StyleSheet.create({
   btn_response: {
     flexDirection: "row",
     justifyContent: "space-evenly",
+    marginTop: 10,
   },
 });
 

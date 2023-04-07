@@ -18,7 +18,7 @@ const s = StyleSheet.create({
     alignItems: "center",
   },
   container_joke_answer: {
-    flex: 6,
+    flex: 10,
     backgroundColor: "#0404047d",
     paddingTop: 20,
   },
