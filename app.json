@@ -2,6 +2,7 @@
   "expo": {
     "name": "DAD JOKES",
     "slug": "dad-jokes-app",
+    "description": "App de blagues",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
