@@ -9,6 +9,7 @@ const s = StyleSheet.create({
     borderRadius: 20,
     justifyContent: "center",
     padding: 20,
+    paddingBottom: 25,
     marginBottom: 40,
     shadowColor: "#000",
     shadowOffset: {

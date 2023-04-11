@@ -26,6 +26,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "54cbab09-c057-405c-904a-a60b81662b0d"
+      }
+    },
+    "owner": "damien87"
   }
 }
